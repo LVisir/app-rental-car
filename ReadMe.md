@@ -9,9 +9,7 @@ Kubernetes-deployed modular application with separate backend, frontends, and da
  - [Introduction](#introduction)
  - [Technologies](#technologies)
  - [Setup](#setup)
- - [Database Schema](#database-schema)
- - [Swagger](#swagger)
- - [If Swagger is not enough](#api-reference)
+ - [Recap](#recap)
  - [Links](#-links)
 
 
@@ -58,3 +56,50 @@ The script will create a new namespace called ```app-rental-car```. It will crea
 After seeing something like this the namespace are erased with all the things inside and also the images used:
 
 ![](./readme-pic/output_delete_k8s.png)
+
+
+If you don't have kubernetes but just docker, run this other script below. **Prerequisites**: port 3000, 4200, 32091 and 3306 must be free:
+```
+./deploy_docker.sh
+```
+
+After seeing something like this the application is ready-to-use:
+
+![](./readme-pic/output_deploy_docker.png)
+
+On ```http://localhost:3000``` it will run the react-frontend, on ```http://localhost:4200``` the angular-frontend and on ```http://localhost:32091/swagger-ui/index.html``` you will see the swagger of the backend.
+
+To clean the docker containers and images just run ```./clean_deploy_docker.sh```.
+
+After seeing something like this the docker environment are cleaned from what you installed:
+
+![](./readme-pic/output_delete_docker_deploy.png)
+
+
+
+## Recap
+In summary, this is a modular, Kubernetes-deployed application for managing a rental car service. It consists of:
+
+ - Backend Service – Spring Boot application handling business logic, authentication, and database access.
+
+ - Frontend Applications – Angular and React frontends providing separate user interfaces for customers and administrators.
+
+ - Database Service – MySQL storing users, bookings, and vehicles data.
+
+Each component runs in its own pod, communicating via internal service URLs. The architecture allows independent deployment and scaling of each component.
+
+Key Features:
+
+ - REST APIs for all backend operations
+
+ - Multiple frontend clients
+
+ - Dockerized and Kubernetes-ready deployment
+
+ - Modular design supporting future microservices expansion
+
+To know better how the applications works please visit here [spring-rental-car](https://github.com/LVisir/spring-rental-car) and here [angular-rental-car](https://github.com/LVisir/angular-rental-car) or here [react-rental-car](https://github.com/LVisir/react-rental-car).
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/LVisir)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edoardo-mariani-2903a5262/)
