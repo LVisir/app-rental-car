@@ -31,7 +31,7 @@ You just need docker and kubernetes installed. If no kubernetes is installed but
 
 
 ```
-git clone https://github.com/LVisir/app-rental-car.git
+git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 ```
 ```
 cd app-rental-car
