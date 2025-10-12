@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40eedc1c-7707-4245-adc9-d70ed93f0670" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-frontend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-frontend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/interceptors/headers.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/interceptors/headers.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/services/booking.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/services/booking.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/services/vehicle.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/services/vehicle.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-frontend/src/Paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/src/Paths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-frontend/src/components/authentication/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/src/components/authentication/Login.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="33iGZMy4LvDQyYSUAmIifYPuVQL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/odraode/Desktop/github projects/app-rental-car&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\odraode\Desktop\github projects\app-rental-car\k8s" />
+      <recent name="C:\Users\odraode\Desktop\github projects\app-rental-car" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40eedc1c-7707-4245-adc9-d70ed93f0670" name="Changes" comment="" />
+      <created>1759792533577</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759792533577</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

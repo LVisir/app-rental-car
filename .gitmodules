@@ -1,0 +1,9 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/LVisir/spring-rental-car.git
+[submodule "angular-frontend"]
+	path = angular-frontend
+	url = https://github.com/LVisir/angular-rental-car.git
+[submodule "react-frontend"]
+	path = react-frontend
+	url = https://github.com/LVisir/react-rental-car.git
