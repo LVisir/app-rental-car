@@ -46,7 +46,29 @@ Wait for an output similar to this:
 ![](./readme-pic/output_deploy_k8s.png)
 
 
-The script will create a new namespace called ```app-rental-car```. It will create the images locally from which the k8s component will fetch to create the pod. It will create 4 deployments, 4 services and a configmap. On ```http://localhost:30000``` it will run the react-frontend, on ```http://localhost:30001``` the angular-frontend and on ```http://localhost:32091/swagger-ui/index.html``` you will see the swagger of the backend. To clean all the things installed just run:
+The script will create a new namespace called ```app-rental-car```. It will create the images locally from which the k8s component will fetch to create the pod. It will create 4 deployments, 4 services and a configmap. On ```http://localhost:30000``` it will run the react-frontend, on ```http://localhost:30001``` the angular-frontend and on ```http://localhost:32091/swagger-ui/index.html``` you will see the swagger of the backend. 
+
+
+
+SUPERUSER credentials:
+```
+test@gmail.com
+```
+```
+1234
+```
+
+CUSTOMER credentials:
+```
+caccamo@gmail.com
+```
+```
+1234
+```
+
+
+
+To clean all the things installed just run:
 
 ```
 ./clean_k8s.sh
