@@ -41,7 +41,7 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 - Angular 13.2.6
 - React 17.0.2
 # Setup
-You just need docker and kubernetes installed. If no kubernetes is installed but only docker there is also a command to create and start the app just with containers (check below). No matter if you have a local or a remote cluster because by executing the command below it will create a totally new namespace ```app-rental-car```. **Prerequisites**: port 30000, 30001, 32091 and 3306 must be free.
+You just need docker and kubernetes installed (**NO MINIKUBE**). With docker desktop you can easy have a local cluster. Check here: [local cluster with docker desktop](https://www.docker.com/blog/how-to-set-up-a-kubernetes-cluster-on-docker-desktop/). If no kubernetes is installed but only docker there is also a command to create and start the app just with containers (check below). No matter if you have a local or a remote cluster because by executing the command below it will create a totally new namespace ```app-rental-car```. **Prerequisites**: port 30000, 30001, 32091 and 3306 must be free.
 
 
 ```
