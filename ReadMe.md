@@ -1,7 +1,10 @@
 
 # app-rental-car
 
-Kubernetes-deployed modular application with separate backend, frontends, and database services.
+Kubernetes-deployed modular application with separate backend, frontends, and database services. Because there are submodules to clone the project you must execute 
+```
+git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
+```
 
 ## Table of Contents
 
@@ -16,9 +19,20 @@ Kubernetes-deployed modular application with separate backend, frontends, and da
 ## General Info
 
 This educational project aim is to show how a kubernetes application is organized. There are three deployments each refers to a [backend](https://github.com/LVisir/spring-rental-car), an [angular-frontend](https://github.com/LVisir/angular-rental-car), a [react-frontend](https://github.com/LVisir/react-rental-car) and a stateless mysql database; there are services to allow the communication between the pods and a configmap that serve to generate the tables and the data inside the database.
+
+Because there are submodules to clone the project you must execute 
+```
+git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
+```
+
 ## Introduction
 
 The project contains three submodules fetched from three existing projects: the [spring-rental-car](https://github.com/LVisir/spring-rental-car), the [angular-rental-car](https://github.com/LVisir/angular-rental-car) and the [react-rental-car](https://github.com/LVisir/react-rental-car). For more info please visit the appropriate page. In summary, the application is a rental car system. Each user can rent a car and an admin can approve the bookings. The goal of the project is to have an easy ready-to-use kubernetes application to study how a normal production cloud software are organized.
+
+Because there are submodules to clone the project you must execute 
+```
+git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
+```
 ## Technologies
 - Spring 2.6.3
 - Java 17
