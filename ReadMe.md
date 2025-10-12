@@ -19,7 +19,9 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 
 ## General Info
 
-This educational project aim is to show how a kubernetes application is organized. There are three deployments each refers to a [backend](https://github.com/LVisir/spring-rental-car), an [angular-frontend](https://github.com/LVisir/angular-rental-car), a [react-frontend](https://github.com/LVisir/react-rental-car) and a stateless mysql database; there are services to allow the communication between the pods and a configmap that serve to generate the tables and the data inside the database. You need docker desktop with his local k8s cluster to make this work.
+This educational project aim is to show how a kubernetes application is organized. There are three deployments each refers to a [backend](https://github.com/LVisir/spring-rental-car), an [angular-frontend](https://github.com/LVisir/angular-rental-car), a [react-frontend](https://github.com/LVisir/react-rental-car) and a stateless mysql database; there are services to allow the communication between the pods and a configmap that serve to generate the tables and the data inside the database. The project only works if you have docker desktop with his local kubernetes cluster. Check here: [how to have a local cluster with docker desktop](https://www.docker.com/blog/how-to-set-up-a-kubernetes-cluster-on-docker-desktop/). The choice of using docker desktop with his local cluster is thanks to his structure that made possible to have a local docker registry to put local image that are pulled from the pod and to easy open the localhost ports for making the pod communicate between each other.
+
+If you don't have the local cluster of docker desktop (for example in linux distribution it doesn't exist) skip to this part [docker setup](#docker-setup-no-k8s) where a plain docker environment will be set without the needs of any cluster.
 
 Because there are submodules to clone the project you must execute 
 ```
@@ -28,7 +30,7 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 
 ## Introduction
 
-The project contains three submodules fetched from three existing projects: the [spring-rental-car](https://github.com/LVisir/spring-rental-car), the [angular-rental-car](https://github.com/LVisir/angular-rental-car) and the [react-rental-car](https://github.com/LVisir/react-rental-car). For more info please visit the appropriate page. In summary, the application is a rental car system. Each user can rent a car and an admin can approve the bookings. The goal of the project is to have an easy ready-to-use kubernetes application to study how a normal production cloud software are organized. You need docker desktop with his local k8s cluster to make this work.
+The project contains three submodules fetched from three existing projects: the [spring-rental-car](https://github.com/LVisir/spring-rental-car), the [angular-rental-car](https://github.com/LVisir/angular-rental-car) and the [react-rental-car](https://github.com/LVisir/react-rental-car). For more info please visit the appropriate page. In summary, the application is a rental car system. Each user can rent a car and an admin can approve the bookings. The goal of the project is to have an easy ready-to-use kubernetes application to study how a normal production cloud software are organized. You need docker desktop with his local k8s cluster to make this work. If you don't have the local cluster of docker desktop (for example in linux distribution it doesn't exist) skip to this part [docker setup](#docker-setup-no-k8s) where a plain docker environment will be set without the needs of any cluster.
 
 Because there are submodules to clone the project you must execute 
 ```
