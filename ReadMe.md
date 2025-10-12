@@ -12,7 +12,7 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
  - [Introduction](#introduction)
  - [Technologies](#technologies)
  - [Setup](#setup)
- - [Docker setup (no k8s)](#docker-setup)
+ - [Docker setup (no k8s)](#docker-setup-no-k8s)
  - [Recap](#recap)
  - [Links](#-links)
 
@@ -42,7 +42,7 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 - Angular 13.2.6
 - React 17.0.2
 # Setup
-Tested in the local cluster of ```docker-desktop```. Check here: [how to have a local cluster with docker desktop](https://www.docker.com/blog/how-to-set-up-a-kubernetes-cluster-on-docker-desktop/), with docker desktop you can have a ready k8s cluster in local. If no kubernetes is installed but only docker there is also a command to create and start the app just with containers ([check below](#docker-setup)). Don't worry if your local cluster ```docker-desktop``` will get modify because by executing the command below it will create a totally new namespace ```app-rental-car```. **Prerequisites**: port 30000, 30001, 32091 and 3306 must be free.
+Tested in the local cluster of ```docker-desktop```. Check here: [how to have a local cluster with docker desktop](https://www.docker.com/blog/how-to-set-up-a-kubernetes-cluster-on-docker-desktop/), with docker desktop you can have a ready k8s cluster in local. If no kubernetes is installed but only docker there is also a command to create and start the app just with containers ([check below](#docker-setup-no-k8s)). Don't worry if your local cluster ```docker-desktop``` will get modify because by executing the command below it will create a totally new namespace ```app-rental-car```. **Prerequisites**: port 30000, 30001, 32091 and 3306 must be free.
 
 ```
 Launch Docker Desktop
