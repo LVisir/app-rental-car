@@ -18,7 +18,7 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 
 ## General Info
 
-This educational project aim is to show how a kubernetes application is organized. There are three deployments each refers to a [backend](https://github.com/LVisir/spring-rental-car), an [angular-frontend](https://github.com/LVisir/angular-rental-car), a [react-frontend](https://github.com/LVisir/react-rental-car) and a stateless mysql database; there are services to allow the communication between the pods and a configmap that serve to generate the tables and the data inside the database.
+This educational project aim is to show how a kubernetes application is organized. There are three deployments each refers to a [backend](https://github.com/LVisir/spring-rental-car), an [angular-frontend](https://github.com/LVisir/angular-rental-car), a [react-frontend](https://github.com/LVisir/react-rental-car) and a stateless mysql database; there are services to allow the communication between the pods and a configmap that serve to generate the tables and the data inside the database. You need docker desktop with his local k8s cluster to make this work.
 
 Because there are submodules to clone the project you must execute 
 ```
@@ -27,7 +27,7 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 
 ## Introduction
 
-The project contains three submodules fetched from three existing projects: the [spring-rental-car](https://github.com/LVisir/spring-rental-car), the [angular-rental-car](https://github.com/LVisir/angular-rental-car) and the [react-rental-car](https://github.com/LVisir/react-rental-car). For more info please visit the appropriate page. In summary, the application is a rental car system. Each user can rent a car and an admin can approve the bookings. The goal of the project is to have an easy ready-to-use kubernetes application to study how a normal production cloud software are organized.
+The project contains three submodules fetched from three existing projects: the [spring-rental-car](https://github.com/LVisir/spring-rental-car), the [angular-rental-car](https://github.com/LVisir/angular-rental-car) and the [react-rental-car](https://github.com/LVisir/react-rental-car). For more info please visit the appropriate page. In summary, the application is a rental car system. Each user can rent a car and an admin can approve the bookings. The goal of the project is to have an easy ready-to-use kubernetes application to study how a normal production cloud software are organized. You need docker desktop with his local k8s cluster to make this work.
 
 Because there are submodules to clone the project you must execute 
 ```
@@ -43,7 +43,15 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 # Setup
 Tested in the local cluster of docker desktop. Check here: [local cluster with docker desktop](https://www.docker.com/blog/how-to-set-up-a-kubernetes-cluster-on-docker-desktop/), with docker desktop you can have a ready k8s cluster in local. If no kubernetes is installed but only docker there is also a command to create and start the app just with containers (check below). No matter if you have a local or a remote cluster because by executing the command below it will create a totally new namespace ```app-rental-car```. **Prerequisites**: port 30000, 30001, 32091 and 3306 must be free.
 
-
+```
+Launch Docker Desktop
+```
+```
+kubectl config use-context docker-desktop
+```
+```
+Come into the location where you want to clone the project
+```
 ```
 git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 ```
