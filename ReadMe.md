@@ -30,6 +30,8 @@ The project contains three submodules fetched from three existing projects: the 
 - React 17.0.2
 # Setup
 You just need docker and kubernetes installed. If no kubernetes is installed but only docker there is also a command to create and start the app just with containers (check below). No matter if you have a local or a remote cluster because by executing the command below it will create a totally new namespace ```app-rental-car```. **Prerequisites**: port 30000, 30001, 32091 and 3306 must be free.
+
+
 ```
 git clone https://github.com/LVisir/app-rental-car.git
 ```
@@ -40,14 +42,18 @@ cd app-rental-car
 ./deploy_k8s.sh
 ```
 
+
 Wait for an output similar to this:
 
 ![](./readme-pic/output_deploy_k8s.png)
 
+
 The script will create a new namespace called ```app-rental-car```. It will create the images locally from which the k8s component will fetch to create the pod. It will create 4 deployments, 4 services and a configmap. On ```http://localhost:30000``` it will run the react-frontend, on ```http://localhost:30001``` the angular-frontend and on ```http://localhost:32091/swagger-ui/index.html``` you will see the swagger of the backend. To clean all the things installed just run:
+
 ```
 ./clean_k8s.sh
 ```
+
 
 After seeing something like this the namespace are erased with all the things inside and also the images used:
 
