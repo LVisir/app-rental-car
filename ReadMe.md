@@ -44,11 +44,9 @@ git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 - Angular 13.2.6
 - React 17.0.2
 # Setup
-Tested in the local cluster of ```docker-desktop```. Check here: [how to have a local cluster with docker desktop](https://www.docker.com/blog/how-to-set-up-a-kubernetes-cluster-on-docker-desktop/), with docker desktop you can have a ready k8s cluster in local. If no kubernetes is installed but only docker there is also a command to create and start the app just with containers ([check below](#docker-setup-no-k8s)). Don't worry if your local cluster ```docker-desktop``` will get modify because by executing the command below it will create a totally new namespace ```app-rental-car```. **Prerequisites**: port 30000, 30001, 32091 and 3306 must be free.
+For this project it was used **Docker desktop** thanks to the local kubernetes cluster he provided. Check here: [how to have a local cluster with docker desktop](https://www.docker.com/blog/how-to-set-up-a-kubernetes-cluster-on-docker-desktop/). If you don't have **Docker desktop** with his local cluster installed but only docker there is also a command to create and start the app just with containers ([check below](#docker-setup-no-k8s)). Don't worry if your local cluster ```docker-desktop``` will get modify because by executing the command below it will create a totally new namespace ```app-rental-car```. **Prerequisites**: port 30000, 30001, 32091 and 3306 must be free.
 
-```
-Launch Docker Desktop
-```
+**Launch Docker Desktop**  
 Check that the right context is set:
 ```
 kubectl config get-contexts
@@ -58,9 +56,7 @@ It must appear something like this with the dot pointing ```docker-desktop```:
 ```
 kubectl config use-context docker-desktop
 ```
-```
-Come into the location where you want to clone the project
-```
+**Come into the location where you want to clone the project**  
 ```
 git clone --recurse-submodules https://github.com/LVisir/app-rental-car.git
 ```
