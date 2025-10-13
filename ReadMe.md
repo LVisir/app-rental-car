@@ -111,7 +111,7 @@ After seeing something like this the namespace are erased with all the things in
 ![](./readme-pic/output_delete_k8s.png)
 
 ## Docker setup (no k8s)
-If you don't have your local kubernetes on docker desktop but just docker, run this other script below. **Prerequisites**: port 3000, 4200, 32091 and 3306 must be free:
+If you don't have your local kubernetes on docker desktop but just docker or a different cluster, run this other script below. **Prerequisites**: port 3000, 4200, 32091 and 3306 must be free:
 ```
 ./deploy_docker.sh
 ```
